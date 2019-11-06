@@ -4,7 +4,7 @@
   "description": "My own webpage which is actually a summary of my experience as a web developer.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js -e html,css,js"
+    "start": "node server.js -e html,css,js"
   },
   "author": "jzcodeveloper",
   "license": "ISC",
