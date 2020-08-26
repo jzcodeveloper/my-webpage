@@ -1,6 +1,6 @@
 const initialize = () => {
   const form = document.querySelector(".form");
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
   });
 
@@ -10,8 +10,9 @@ const initialize = () => {
 
 const checkAge = () => {
   const yearsOld = document.getElementById("years-old");
-  const age = new Date().getFullYear() - 1999;
-  yearsOld.innerText = `I'm a ${age}-year-old web developer with around a year of experience building full-stack applications using the MERN stack.`;
+  const birthday = +new Date("10/14/1999");
+  const age = ~~((Date.now() - birthday) / 31557600000);
+  yearsOld.innerText = `I'm a ${age}-year-old web developer with around two years of experience building full-stack applications using the MERN stack.`;
 };
 
 const checkScrollPosition = () => {

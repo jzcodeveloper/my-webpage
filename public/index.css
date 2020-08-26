@@ -26,6 +26,17 @@ body {
   background-color: var(--black);
 }
 
+.column {
+  display: flex;
+  flex-flow: column;
+}
+
+.small {
+  cursor: pointer;
+  padding-top: 10px;
+  font-size: 0.55rem;
+}
+
 /* SVG START */
 
 .container {
