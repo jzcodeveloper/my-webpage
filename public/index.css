@@ -33,8 +33,16 @@ body {
 
 .small {
   cursor: pointer;
-  padding-top: 10px;
-  font-size: 0.55rem;
+  padding-top: 5px;
+  font-size: 0.4rem;
+}
+
+@media (min-width: 600px) {
+  .small {
+    padding-top: 10px;
+    font-size: 0.55rem;
+    font-weight: normal;
+  }
 }
 
 /* SVG START */
@@ -573,7 +581,7 @@ body {
 }
 
 .project-title {
-  font-size: 0.9em;
+  font-size: 0.85em;
   letter-spacing: 0.07em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.75);
